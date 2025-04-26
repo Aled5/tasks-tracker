@@ -1,4 +1,4 @@
-# Task Tracker App
+# Tasks Tracker App
 
 A full-stack web application for managing tasks and sections, built with Node JS, Express JS, and vanilla JavaScript. The app allows users to create, update, and delete sections and tasks, with data persisted in a JSON file. It features a dark-themed UI with real-time updates and RESTful APIs for CRUD operations.
 
@@ -25,15 +25,18 @@ Follow these steps to run the Task Tracker App locally:
 
 ### Installation
 1. Clone the repository:
+  ```
   git clone https://github.com/your-username/task-tracker.git
-  
   cd task-tracker
+  ```
 2. Install dependencies:
+  ```
    npm install
-3. Start the server:
-   node app.js
-   or
-   npm start with Nodemon.
+   ```
+3. Start the server using Nodemon:
+   ```
+   npm start
+   ```
 4. Open your browser and navigate to `http://localhost:5000`.
 
 ### Project Structure
@@ -64,7 +67,7 @@ The app provides RESTful API endpoints for managing sections and tasks. All endp
 
 ### Sections Endpoints
 - **GET /api_sections/sections**
-  - Retrieve all sections.
+  - Retrieve all sections and tasks.
   - Response: `200 OK` with an array of sections.
 - **POST /api_sections/sections/:section_id**
   - Create a new section with the given `section_id`.
