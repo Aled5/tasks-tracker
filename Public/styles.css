@@ -1,0 +1,170 @@
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* Sets minimum 200px height, can grow larger */
+    grid-template-rows: auto auto auto;
+    /* I repeated to minmax function because it needs to be specified on each row */ 
+}
+nav {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+main {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+/* Styles */
+.container {
+    /* Core dark theme properties */
+    background-color: #1a1a1a;    
+    color: #e0e0e0;             
+    font-family: Arial, sans-serif; 
+    margin: 0;                   
+    padding: 20px;               
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    /* Style */
+    background-color: #333;      
+    color: #e0e0e0;              
+    padding: 10px;               
+    margin: 10px;                
+    border-radius: 10px;
+    width: 60%;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+main section span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e0e0e0;
+    cursor: text;
+    
+}
+
+main section div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+main section div {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+
+.plus-button-section {
+
+    width: 30px; /* Fixed size for circle */
+    height: 30px;
+    min-width: 30px; /* Prevent flex shrinking */
+    margin: 0 5px; /* Consistent spacing */
+    background-color: #333; /* Dark gray */
+    border-radius: 50%; /* Circular shape */
+    border: none; /* No border */
+    color: #e0e0e0; /* Light gray for plus */
+    display: flex; /* Center content */
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Plus sign size */
+    cursor: pointer; /* Pointer on hover */
+    flex-shrink: 0; /* Prevent flex from resizing */
+}
+
+
+.plus-button-section:hover {
+    background-color: #666; /* Dark gray, slightly darker than #666 */
+}
+
+.cross-button-section {
+    margin-left: 0px 5px;
+    background-color: #333; /* Dark gray, slightly darker than #333 */
+    border-radius: 50%; /* To make the button round */
+    border: 0px;
+    color: #e0e0e0; /* Light gray */
+    
+}
+.cross-button-section:hover {
+    background-color: #666; /* Dark gray, slightly darker than #666 */
+}
+
+section div label {
+    font-size: 1.2em; /* Font size for labels */
+    color: #e0e0e0; /* Light gray text color */
+    cursor: text; /* Pointer on hover */
+}
+
+
+
+section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+}
+section ul li {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding around each item */
+    background-color: #444; /* Dark gray background for items */
+    border-radius: 5px; /* Rounded corners */
+    color: #e0e0e0; /* Light gray text color */
+}
+section ul li span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e0e0e0;
+    cursor: text;
+}
+.cross-button-task { 
+    margin-left: 0px 5px;
+    background-color: #444; /* Dark gray, slightly darker than #333 */
+    border-radius: 50%; /* To make the button round */
+    border: 0px;
+    color: #e0e0e0; /* Light gray */
+
+}
+.cross-button-task:hover {
+    background-color: #666; /* Dark gray, slightly darker than #666 */
+}
+.plus-button-task {
+    width: 30px; /* Fixed size for circle */
+    height: 30px;
+    min-width: 30px; /* Prevent flex shrinking */
+    margin: 0px; /* Consistent spacing */
+    padding: 2px; /* Consistent spacing */
+    background-color: #333; /* Dark gray */
+    border-radius: 50%; /* Circular shape */
+    border: none; /* No border */
+    color: #e0e0e0; /* Light gray for plus */
+    display: flex; /* Center content */
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Plus sign size */
+    cursor: pointer; /* Pointer on hover */
+    flex-shrink: 0; /* Prevent flex from resizing */
+}
+.plus-button-task:hover {
+    background-color: #666; /* Dark gray, slightly darker than #666 */
+}

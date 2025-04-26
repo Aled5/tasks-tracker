@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>tasks-tracker</title>
+    <meta name="author" content="Aled5" />
+    <meta name="description" content="This is a application to track tasks." />
+    <!--<link rel="icon" href="images/tasks.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <nav></nav>
+    <main>
+      
+      <button class="plus-button-section" title="Add a Section">+</button>
+    
+    </main>
+    <footer></footer>
+    <script src="sections_functions.js"></script>
+    <script src="tasks_functions.js"></script>
+    <script>
+      //*** Fetch Sections and Tasks from the server ***//
+      loadSections();
+      loadTasks();
+
+      //Add event listeners to the plus button
+      const button_plus = document.querySelector('.plus-button-section');
+      button_plus.addEventListener('click',addSection);
+
+    </script>
+  </body>
+</html>

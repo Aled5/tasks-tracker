@@ -1,0 +1,21 @@
+{
+  "name": "tasks-tracker",
+  "version": "1.0.0",
+  "description": "App to track tasks",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
