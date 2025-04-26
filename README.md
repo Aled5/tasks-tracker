@@ -26,7 +26,7 @@ Follow these steps to run the Task Tracker App locally:
 ### Installation
 1. Clone the repository:
   ```
-  git clone https://github.com/your-username/tasks-tracker.git
+  git clone https://github.com/Aled5/tasks-tracker.git
   cd task-tracker
   ```
 2. Install dependencies:
