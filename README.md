@@ -1,6 +1,6 @@
 # Tasks Tracker App
 
-A full-stack web application for managing tasks and sections, built with Node.js, Express.js, and vanilla JavaScript. The app allows users to create, update, and delete sections and tasks, with data persisted in a JSON file. It features a dark-themed UI with real-time updates and RESTful APIs for CRUD operations.
+A full-stack web application for managing tasks and sections, built with Node.js, Express.js, and vanilla JavaScript. The app allows users to create, update, and delete sections and tasks, with data persisted in a JSON file. It features a dark-themed UI with real-time updates and a RESTful API for CRUD operations.
 
 ## Table of Contents
 - [Features](#features)
