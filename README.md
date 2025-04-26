@@ -31,12 +31,12 @@ Follow these steps to run the Task Tracker App locally:
   ```
 2. Install dependencies:
   ```
-   npm install
-   ```
+  npm install
+  ```
 3. Start the server using Nodemon:
-   ```
-   npm start
-   ```
+  ```
+  npm start
+  ```
 4. Open your browser and navigate to `http://localhost:5000`.
 
 ### Project Structure
